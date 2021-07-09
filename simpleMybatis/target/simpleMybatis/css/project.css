@@ -1,0 +1,111 @@
+#project-top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../imgs/welBackground2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#live2dcanvas {
+    border: 0 !important;
+}
+
+.text{
+    width: 300px;
+    height: 170px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+
+    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 60px;
+}
+
+.title {
+    color: #000;
+    font-size:35px;
+    margin: 30px;
+    margin-bottom: 0;
+    padding: 90px;
+}
+.main-inner{
+    margin:20px 0;
+}
+.card {
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: #666 0px 0px 3px;
+    transition: transform 1s ease;
+}
+
+.card-wrap {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.color0 {
+    background: #8DC058;
+    color: #fff;
+}
+
+.color1 {
+    background: #319DD4;
+    color: #fff;
+}
+
+.color2 {
+    background: #686871;
+    color: #fff;
+}
+.color3 {
+    background: #D9534F;
+    color: #fff;
+}
+
+.color4 {
+    background: #F0AD4E;
+    color: #fff;
+}
+
+.color5 {
+    background: #5C51EC;
+    color: #fff;
+}
+.card-content{
+    padding : 0 25px;
+    height: 80%;
+    display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+    justify-content: center;
+}
+.card-ft{
+    height: 20%;
+    display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.card-ft a,.card-content a{
+    color: #fff;
+}

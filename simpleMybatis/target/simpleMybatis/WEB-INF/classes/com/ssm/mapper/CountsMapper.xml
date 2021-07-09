@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.ssm.mapper.CountsMapper">
+    <resultMap id="BaseResultMap" type="com.ssm.entity.Counts">
+        <result column="usercount" property="userCount" jdbcType="INTEGER" />
+    <result column="deptcount" property="deptCount" jdbcType="INTEGER" />
+    <result column="employeecount" property="employeeCount" jdbcType="INTEGER" />
+    <result column="jobcount" property="jobCount" jdbcType="INTEGER" />
+    <result column="noticecount" property="noticeCount" jdbcType="INTEGER" />
+    <result column="rolecount" property="roleCount" jdbcType="INTEGER" />
+        <result column="uploadfilecount" property="uploadCount" jdbcType="INTEGER" />
+
+    </resultMap>
+
+    <select id="selectCounts"  resultMap="BaseResultMap" resultType="com.ssm.entity.Counts">
+        select *
+        from counts;
+    </select>
+
+</mapper>
