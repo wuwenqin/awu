@@ -1,0 +1,29 @@
+create view deptcount
+as
+select count(0) as deptcount from dept;
+
+
+create view jobcount
+as
+select count(0) as jobcount from job;
+
+create view usercount
+as
+select count(0) as usercount from user;
+
+create view employeecount
+as
+select count(0) as employeecount from employee;
+
+create view uploadfilecount
+as
+select count(0) as uploadfilecount from uploadfile;
+
+create view noticecount
+as
+select count(0) as noticecount from notice;
+
+
+create view counts
+as
+select `usercount`.`usercount` AS `usercount`,`deptcount`.`deptcount` AS `deptcount`,`employeecount`.`employeecount` AS `employeecount`,`jobcount`.`jobcount` AS `jobcount`,`uploadfilecount`.`uploadfilecount` AS `uploadfilecount`,`rolecount`.`rolecount` AS `rolecount`,`noticecount`.`noticecount` AS `noticecount` from ((((((`usercount` join `deptcount`) join `employeecount`) join `jobcount`) join `uploadfilecount`) join `rolecount`) join `noticecount`)
